@@ -23,18 +23,24 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Nazwa użytkownika</span>
+                  <input type="text" id="shop-login" class="form-control" aria-label="Nazwa uzytkownika" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Hasło</span>
+                  <input type="password" class="form-control" aria-label="Hasło" aria-describedby="basic-addon1">
+                </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-success">Zaloguj się</button>
             </div>
           </div>
         </div>
       </div>
       </div>
       <!-- register modal -->
-      <div class="login">
+      <div class="register">
         <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -45,11 +51,17 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Nazwa użytkownika</span>
+                  <input type="text" id="shop-login" class="form-control" aria-label="Nazwa uzytkownika" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Hasło</span>
+                  <input type="password" class="form-control" aria-label="Hasło" aria-describedby="basic-addon1">
+                </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-success">Zarejestruj się</button>
             </div>
           </div>
         </div>
