@@ -1,7 +1,13 @@
 @import "variables";
 @import "mixins";
-.main-header {
-  margin: 1rem 0;
+.theme-layout {
+  background-color: $theme-color;
+  color: #fff;
+  border: none;
+  transition: 0.3s all;
+}
+.theme-layout:hover {
+  background-color: $theme-color-lighter;
 }
 .login-bar {
   text-align: right;
@@ -27,6 +33,10 @@
 }
 .logo {
   font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 .modal-body .input-group {
   padding: 1rem 0;

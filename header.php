@@ -71,10 +71,12 @@
   <main class="container">
     <header class="main-header row d-flex justify-content-around">
       <div class="logo col-12 col-sm-4 col-md-4">
-        <h1 class="text-center"><?php bloginfo('name'); ?></h1>
+        <div class="text-center"><?php bloginfo('name'); ?></div>
       </div>
-      <div class="input-group col-12 col-md-6">
-        <button class="input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-        <input type="text" class="form-control col-12 col-md-8"  aria-label="search" aria-describedby="basic-addon1">
+      <div class="col-12 col-md-6 row align-items-center">
+        <div class="input-group">
+          <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+          <input type="text" class="form-control col-12 col-md-9"  aria-label="search" aria-describedby="basic-addon1">
+        </div>
       </div>
     </header>

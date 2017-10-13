@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselPromo" class="promo-carousel carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <?php while ( $slider_loop->have_posts() ) : $slider_loop->the_post();?>
         <div class="carousel-item">
@@ -11,11 +11,11 @@
         </div>
       <?php endwhile; ?>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselPromo" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselPromo" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
