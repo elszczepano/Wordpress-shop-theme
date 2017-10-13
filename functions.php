@@ -1,4 +1,6 @@
 <?php
+  require_once('libs/posttypes.php');
+
   function theme_css() {
     wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
     wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&amp;subset=latin-ext', false, NULL, 'all' );
