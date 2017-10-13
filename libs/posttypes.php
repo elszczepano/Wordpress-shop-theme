@@ -1,4 +1,6 @@
 <?php
+add_theme_support( 'post-thumbnails' );
+
 function slider_content_init() {
     $labels = array(
         'name'                  => _x( 'Slider', 'Post type general name', 'textdomain' ),
@@ -45,5 +47,9 @@ function slider_content_init() {
 }
 
 add_action( 'init', 'slider_content_init' );
+
+//for custom loop
+$slider_args = array( 'post_type' => 'slide');
+$slider_loop = new WP_Query( $slider_args );
 
  ?>
