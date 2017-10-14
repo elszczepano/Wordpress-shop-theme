@@ -1,14 +1,39 @@
 @import "variables";
 @import "mixins";
-.promo-carousel{
-  width: 960px;
-  margin: 0 auto;
-  min-height:14em;
-  .carousel-inner{
-    .carousel-item {
-      .d-block {
-
-      }
+.promo-carousel-box {
+    position: relative;
+}
+.promo-controls {
+  position:absolute;
+  z-index: 9999;
+  bottom:0;
+  right:0;
+  font-size: 1.5rem;
+  user-select: none;
+  span {
+    margin: 0.5rem;
+    color: #fff;
+    border: 2px solid $theme-color;
+    padding: 0.7rem;
+    cursor: pointer;
   }
 }
+.promo-carousel {
+  .item {
+      min-height: 50vh;
+      background-position: center center;
+      background-size: 100%;
+      color: #fff;
+      .promo-item-content {
+      padding: 1.5rem;
+      h2 {
+        font-weight: 400;
+        font-size: 3.5rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+      }
+  }
 }

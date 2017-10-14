@@ -1,6 +1,19 @@
+//promo caraousel init
 $('.promo-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    items:1
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    dots: false,
+    autoplay: true,
+    rewind: true
+})
+//promo carousel controls
+let owl = $('.promo-carousel');
+owl.owlCarousel();
+$('.promo-next').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+$('.promo-prev').click(function() {
+    owl.trigger('prev.owl.carousel');
 })
