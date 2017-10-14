@@ -73,10 +73,10 @@
       <div class="logo col-12 col-sm-4 col-md-4">
         <div class="text-center"><?php bloginfo('name'); ?></div>
       </div>
-      <div class="col-12 col-md-6 row align-items-center">
+        <form role="search" method="get" id="searchform" class="searchform col-12 col-md-6 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">
-          <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-          <input type="text" class="form-control col-12 col-md-9"  aria-label="search" aria-describedby="basic-addon1">
+            <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+            <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
         </div>
-      </div>
+        </form>
     </header>

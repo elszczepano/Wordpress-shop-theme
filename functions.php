@@ -3,14 +3,17 @@
 
   function theme_css() {
     wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
-    wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&amp;subset=latin-ext', false, NULL, 'all' );
-    wp_enqueue_style( 'style.min', get_template_directory_uri() . '/css/style.min.css', false, NULL, 'all' );
-    wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, NULL, 'all' );
+    wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&amp;subset=latin-ext');
+    wp_enqueue_style( 'style.min', get_template_directory_uri() . '/css/style.min.css');
+    wp_enqueue_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    wp_enqueue_style( 'owl_min', get_template_directory_uri().'/libs/owlcarousel/dist/assets/owl.carousel.min.css');
+    wp_enqueue_style( 'owl_theme_default', get_template_directory_uri().'/libs/owlcarousel/dist/assets/owl.theme.default.min.css');
   }
   function theme_js() {
-    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js');
+    wp_enqueue_script( 'jq', 'https://code.jquery.com/jquery-3.2.1.min.js');
     wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
     wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js');
+    wp_enqueue_script( 'owl_js', get_template_directory_uri() . '/libs/owlcarousel/dist/owl.carousel.min.js');
     wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js');
     wp_enqueue_script( 'carousel', get_template_directory_uri() . '/scripts/carousel-config.js');
   }
@@ -29,5 +32,10 @@
   }
   add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
 
+  add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! empty( $scripts->registered['jquery'] ) ) {
+        $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
+    }
+  } );
 
  ?>
