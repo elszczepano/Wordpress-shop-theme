@@ -1,5 +1,6 @@
 <?php
   require_once('libs/posttypes.php');
+  require_once('libs/utils.php');
 
   function theme_css() {
     wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');

@@ -16,3 +16,18 @@
 .modal-body .input-group {
   padding: 1rem 0;
 }
+.recommended-products-box {
+  background-color: #eee;
+  .recommended-products-header {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+  }
+  .recommended-products-carousel {
+    .recommended-products-carousel-tile {
+      background-color: #fff;
+      margin:0 1rem;
+    }
+  }
+}

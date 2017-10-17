@@ -22,17 +22,17 @@
     <div>
       <h4>O firmie:</h4>
       <ul>
-        <li>Nasze sklepy</li>
-        <li>Regulamin</li>
-        <li>Polityka prywatności</li>
-        <li>Kontakt</li>
+        <li><a href="#">Nasze sklepy</a></li>
+        <li><a href="#">Regulamin</a></li>
+        <li><a href="#">Polityka prywatności</a></li>
+        <li><a href="#">Kontakt</a></li>
       </ul>
     </div>
     <div>
       <h4>Serwis:</h4>
       <ul>
-        <li>Dział obsługi klienta</li>
-        <li>Zwroty i reklamacje</li>
+        <li><a href="#">Dział obsługi klienta</a></li>
+        <li><a href="#">Zwroty i reklamacje</a></li>
       </ul>
     </div>
   </div>

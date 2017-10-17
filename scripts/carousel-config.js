@@ -19,3 +19,14 @@ $('.promo-next').click(function() {
 $('.promo-prev').click(function() {
     owl.trigger('prev.owl.carousel');
 })
+//recommended products carousel init
+$('.recommended-products-carousel').owlCarousel({
+    loop: true,
+    autoplayTimeout: 12000,
+    smartSpeed: 700,
+    nav: false,
+    items: 3,
+    dots: false,
+    autoplay: true,
+    rewind: true
+})
