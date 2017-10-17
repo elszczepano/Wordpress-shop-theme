@@ -1,43 +1,17 @@
 @import "variables";
 @import "mixins";
 @import "carousel";
+@import "header";
+@import "footer";
 .theme-layout {
-  background-color: $theme-color;
-  color: #fff;
+  background-color: $theme-color-light;
+  color: $theme-color-darker;
   border: none;
   transition: 0.3s all;
 }
 .theme-layout:hover {
-  background-color: $theme-color-lighter;
-}
-.login-bar {
-  text-align: right;
-  padding: 1rem;
-  font-size: 1.1rem;
-  background-color: #eee;
-  ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      padding:0 0.5rem;
-      .modal-show {
-        cursor: pointer;
-        transition: 0.3s color;
-      }
-      .modal-show:hover {
-        color: $theme-color;
-      }
-    }
-  }
-}
-.logo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  padding: 1rem;
-  box-sizing: border-box;
+  background-color: $theme-color;
+  color: $theme-color-darker;
 }
 .modal-body .input-group {
   padding: 1rem 0;

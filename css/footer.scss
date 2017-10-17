@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+.main-footer {
+  background-color: $theme-color-light;
+  color: $theme-color-darker;
+  margin-top: 2rem;
+  div {
+    padding: 1.5rem;
+    h4 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding-top: 0.5rem;
+        a {
+          color: $theme-color-darker;
+          transition: 0.3s all;
+          text-decoration: none;
+        }
+        a:hover {
+         color: $theme-color;
+       }
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 //promo caraousel init
 $('.promo-carousel').owlCarousel({
     loop: true,
+    autoplayTimeout: 8000,
+    smartSpeed: 700,
     margin: 10,
     nav: false,
     items: 1,
