@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <title><?php bloginfo('name'); ?></title>
@@ -72,7 +72,7 @@
   <main class="container">
     <header class="main-header row d-flex justify-content-around">
       <div class="logo col-12 col-sm-4 col-md-4">
-        <div class="text-center"><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></div>
+        <div class="text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
       </div>
         <form role="search" method="get" id="searchform" class="searchform col-12 col-md-6 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">

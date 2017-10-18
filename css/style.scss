@@ -19,15 +19,30 @@
 .recommended-products-box {
   background-color: #eee;
   .recommended-products-header {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 1.7rem;
+    @include box-header;
   }
   .recommended-products-carousel {
     .recommended-products-carousel-tile {
       background-color: #fff;
       margin:0 1rem;
+    }
+  }
+}
+.latest-products-box {
+  .latest-products-header {
+    @include box-header;
+  }
+  .latest-products {
+    li {
+      list-style-type: none;
+      .add_to_cart_button {
+        display: none;
+      }
+      a {
+        span.onsale {
+          display: none;
+        }
+      }
     }
   }
 }
