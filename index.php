@@ -46,7 +46,7 @@
   				wc_get_template_part( 'content', 'product' );
   			endwhile;
   		} else {
-  			echo __( 'No products found' );
+  			echo __( 'Nie znaleziono produktów.' );
   		}
   		wp_reset_postdata();
 	   ?>

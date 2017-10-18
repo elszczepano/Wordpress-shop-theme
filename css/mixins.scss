@@ -4,3 +4,7 @@
   padding: 2rem 0;
   font-size: 1.6rem;
 }
+@mixin disable-link {
+  text-decoration: none;
+  color: #000;
+}

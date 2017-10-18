@@ -33,10 +33,23 @@
     @include box-header;
   }
   .latest-products {
+    padding: 0;
+    margin: 0;
     li {
       list-style-type: none;
+      padding: 1rem;
       .add_to_cart_button {
         display: none;
+      }
+      a {
+        @include disable-link;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        h2 {
+          @include box-header;
+        }
       }
       a {
         span.onsale {

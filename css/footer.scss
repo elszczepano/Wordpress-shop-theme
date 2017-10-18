@@ -17,9 +17,9 @@
       li {
         padding-top: 0.5rem;
         a {
+          @include disable-link;
           color: $theme-color-darker;
           transition: 0.3s all;
-          text-decoration: none;
         }
         a:hover {
          color: $theme-color;

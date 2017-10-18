@@ -30,7 +30,6 @@
   padding: 1rem;
   box-sizing: border-box;
   div a {
-    color: #000;
-    text-decoration: none;
+    @include disable-link;
   }
 }
