@@ -20,10 +20,8 @@
 }
 .promo-carousel {
   .item {
+      @include background-image;
       min-height: 50vh;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 100%;
       color: #fff;
       .promo-item-content {
       padding: 1.5rem;

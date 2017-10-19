@@ -8,3 +8,16 @@
   text-decoration: none;
   color: #000;
 }
+@mixin color-theme-light {
+  background-color: $theme-color-light;
+  color: $theme-color-darker;
+}
+@mixin color-theme-lighter {
+  background-color: $theme-color-lighter;
+  color: $theme-color-dark;
+}
+@mixin background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

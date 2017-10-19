@@ -30,3 +30,11 @@ $('.recommended-products-carousel').owlCarousel({
     autoplay: true,
     rewind: true
 })
+// single product gallery carousel init
+$('.product-gallery-carousel').owlCarousel({
+    loop: true,
+    smartSpeed: 700,
+    items: 1,
+    dots: false,
+    margin: 50
+})

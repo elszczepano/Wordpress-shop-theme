@@ -1,11 +1,10 @@
 @import "variables";
 @import "mixins";
 .main-footer {
-  background-color: $theme-color-light;
-  color: $theme-color-darker;
+  @include color-theme-light
   margin-top: 2rem;
   div {
-    padding: 1.5rem;
+    padding: 1rem;
     h4 {
       text-transform: uppercase;
       font-size: 1.2rem;
@@ -20,10 +19,10 @@
           @include disable-link;
           color: $theme-color-darker;
           transition: 0.3s all;
-        }
+          }
         a:hover {
          color: $theme-color;
-       }
+          }
       }
     }
   }

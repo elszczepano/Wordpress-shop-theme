@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
-@import "carousel";
+@import "promo-carousel";
+@import "single-product";
 @import "header";
 @import "footer";
 .theme-layout {
@@ -38,6 +39,7 @@
     li {
       list-style-type: none;
       padding: 1rem;
+      margin-bottom: 2rem;
       .add_to_cart_button {
         display: none;
       }
@@ -46,9 +48,28 @@
         img {
           display: block;
           margin: 0 auto;
+          min-height: 300px;
         }
         h2 {
           @include box-header;
+          padding: 0;
+          min-height: 6rem;
+        }
+        .price {
+          @include color-theme-light;
+          margin: 0;
+          transition: 0.3s all;
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          ins {
+            text-decoration: none;
+          }
+        }
+        .price:hover {
+          @include color-theme-lighter;
         }
       }
       a {

@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+.product-container {
+  margin-top: 2rem;
+  .product-gallery-carousel {
+    padding: 0 1rem;
+    .product-gallery-item {
+      width: 100%;
+      min-height: 300px;
+      @include background-image;
+    }
+  }
+}
