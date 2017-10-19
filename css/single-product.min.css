@@ -1,1 +1,1 @@
-.product-container{margin-top:2rem}.product-container .product-gallery-carousel{padding:0 1rem}.product-container .product-gallery-carousel .product-gallery-item{width:100%;min-height:300px;background-position:center center;background-repeat:no-repeat;background-size:100%}
+.product-container{margin-top:2rem;justify-content:center}.product-container .product-gallery-carousel{padding:0 1rem;max-width:50%}.product-container .product-gallery-carousel .product-gallery-item{min-height:300px;background-position:center center;background-repeat:no-repeat;background-size:100%}

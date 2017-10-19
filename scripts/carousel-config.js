@@ -36,5 +36,5 @@ $('.product-gallery-carousel').owlCarousel({
     smartSpeed: 700,
     items: 1,
     dots: false,
-    margin: 50
+    margin: 200
 })
