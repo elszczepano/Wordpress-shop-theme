@@ -68,4 +68,33 @@
       font-size: 1.4rem;
     }
   }
+  .woocommerce-Tabs-panel--description, .woocommerce-Tabs-panel--additional_information {
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-align: justify;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 400;
+      margin: 1rem;
+
+    }
+    a {
+      color: $theme-color-light;
+      text-decoration: none;
+    }
+  }
+  .woocommerce-Tabs-panel--additional_information {
+    table {
+      font-size: 1.2rem;
+    }
+    table tbody th::after{
+      content:":";
+    }
+    table tbody tr td p{
+      margin: 0;
+      font-size: 1.2rem;
+      padding-left: 5px;
+    }
+  }
 }
