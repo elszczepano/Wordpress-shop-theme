@@ -34,6 +34,8 @@ $('.recommended-products-carousel').owlCarousel({
 $('.product-gallery-carousel').owlCarousel({
     loop: true,
     smartSpeed: 700,
+    autoplay: true,
+    autoplayTimeout: 12000,
     items: 1,
     dots: false,
     margin: 200
