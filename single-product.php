@@ -14,6 +14,7 @@
       <?php do_action('woocommerce_single_product_summary'); ?>
     </div>
   </div>
-
-<?php do_action('woocommerce_after_single_product_summary'); ?>
+  <div class="product-description">
+    <?php do_action('woocommerce_after_single_product_summary'); ?>
+  </div>
 <?php get_footer(); ?>

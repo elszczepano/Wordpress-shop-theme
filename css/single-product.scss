@@ -3,6 +3,7 @@
 .product-container {
   margin-top: 2rem;
   justify-content: center;
+  margin-bottom: 5rem;
   .product-gallery-carousel {
     padding: 0 1rem;
     max-width: 50%;
@@ -12,5 +13,59 @@
     }
   }
   .product-about {
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    .price::before {
+      content: 'Cena: ';
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    .price span {
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    .cart {
+      display: flex;
+      margin-bottom: 1rem;
+      .quantity .input-text {
+        max-width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 1.4rem;
+
+      }
+      button {
+        background-color: $theme-color-light;
+        color: $theme-color-darker;
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        font-size: 1.4rem;
+      }
+    }
+    .product_meta {
+      font-weight: 100;
+      a {
+        color: $theme-color-light;
+      }
+    }
+  }
+}
+.product-description .wc-tabs-wrapper {
+  border-top: 1px solid $theme-color-darker;
+  padding-top: 2rem;
+  ul {
+    margin: 0;
+    padding: 0 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    li a{
+      color: $theme-color-light;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
   }
 }

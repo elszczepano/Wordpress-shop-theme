@@ -1,5 +1,5 @@
 <?php
-//unregister tags
+//remove unnecessary functions
 function unregister_tags() {
     unregister_taxonomy_for_object_type( 'post_tag', 'post' );
 }
@@ -27,4 +27,6 @@ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
     unset($tabs['reviews']);
     return $tabs;
   }
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
  ?>

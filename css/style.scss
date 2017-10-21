@@ -4,14 +4,9 @@
 @import "single-product";
 @import "header";
 @import "footer";
-.theme-layout {
+
+::selection {
   background-color: $theme-color-light;
-  color: $theme-color-darker;
-  border: none;
-  transition: 0.3s all;
-}
-.theme-layout:hover {
-  background-color: $theme-color;
   color: $theme-color-darker;
 }
 .modal-body .input-group {
