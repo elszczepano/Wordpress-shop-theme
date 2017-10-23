@@ -29,4 +29,14 @@ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
   }
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+function remove_posts_menu() {
+    remove_menu_page('edit.php');
+}
+add_action('admin_init', 'remove_posts_menu');
+
+function wpse120418_unregister_categories() {
+    register_taxonomy( 'category', array() );
+}
+add_action( 'init', 'wpse120418_unregister_categories' );
  ?>
