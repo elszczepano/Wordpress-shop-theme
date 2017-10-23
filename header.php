@@ -11,7 +11,7 @@
       <ul>
         <li><span class="modal-show" data-toggle="modal" data-target="#loginModal">Zaloguj się</span></li>
         <li><span class="modal-show" data-toggle="modal" data-target="#registerModal">Rejestracja</span></li>
-        <li><a href="#"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
+        <li><a href="<?php echo get_template_directory_uri().'/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
       </ul>
       <!-- login modal -->
       <div class="login">
