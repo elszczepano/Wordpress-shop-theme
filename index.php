@@ -16,14 +16,19 @@
   </div>
 </div>
 <div class="recommended-products-box">
-  <?php var_dump($recommended_post); ?>
   <h2 class="recommended-products-header">Polecane produkty</h2>
   <div class="owl-carousel recommended-products-carousel">
     <?php
-        if($recommended_slider): foreach( $recommended_slider as $post ): ?>
-
+        if($recommended_slider): foreach( $recommended_slider as $product ):?>
+        <a href="<?php echo get_the_permalink($product); ?>">
+          <div class="recommended-products-carousel-tile">
+            <h2><?php echo get_the_title($product); ?></h2>
+            <div class="recommended-product-thumbnail" style="background-image:url('<?php echo get_the_post_thumbnail_url($product); ?>')"></div>
+            <h3 class="recommended-product-price"><?php echo ($product->_regular_price)." ".get_woocommerce_currency_symbol(); ?></h3>
+          </div>
+        </a>
     <?php endforeach; endif; ?>
-    <!-- <div class="recommended-products-carousel-tile">2</div>
+    <!--
     <div class="recommended-products-carousel-tile">3</div>
     <div class="recommended-products-carousel-tile">4</div>
     <div class="recommended-products-carousel-tile">5</div>

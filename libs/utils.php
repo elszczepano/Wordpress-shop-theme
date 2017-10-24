@@ -41,7 +41,7 @@ function wpse120418_unregister_categories() {
 add_action( 'init', 'wpse120418_unregister_categories' );
 
 //Advanced Custom Fields - recommended products
-$recommended_post = get_posts(array(
+$recommended_slider = get_posts(array(
   'post_type' 	  => 'product',
   'key'     => 'main_site_recommend',
   'numposts'	  => -1,
@@ -51,4 +51,3 @@ $recommended_post = get_posts(array(
   'value'	=> 'tak'
 ));
 ?>
- ?>
