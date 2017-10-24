@@ -16,10 +16,14 @@
   </div>
 </div>
 <div class="recommended-products-box">
+  <?php var_dump($recommended_post); ?>
   <h2 class="recommended-products-header">Polecane produkty</h2>
   <div class="owl-carousel recommended-products-carousel">
-    <div class="recommended-products-carousel-tile">1</div>
-    <div class="recommended-products-carousel-tile">2</div>
+    <?php
+        if($recommended_slider): foreach( $recommended_slider as $post ): ?>
+
+    <?php endforeach; endif; ?>
+    <!-- <div class="recommended-products-carousel-tile">2</div>
     <div class="recommended-products-carousel-tile">3</div>
     <div class="recommended-products-carousel-tile">4</div>
     <div class="recommended-products-carousel-tile">5</div>
@@ -29,7 +33,7 @@
     <div class="recommended-products-carousel-tile">9</div>
     <div class="recommended-products-carousel-tile">10</div>
     <div class="recommended-products-carousel-tile">11</div>
-    <div class="recommended-products-carousel-tile">12</div>
+    <div class="recommended-products-carousel-tile">12</div> -->
   </div>
 </div>
 <div class="latest-products-box">

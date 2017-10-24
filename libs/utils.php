@@ -39,4 +39,16 @@ function wpse120418_unregister_categories() {
     register_taxonomy( 'category', array() );
 }
 add_action( 'init', 'wpse120418_unregister_categories' );
+
+//Advanced Custom Fields - recommended products
+$recommended_post = get_posts(array(
+  'post_type' 	  => 'product',
+  'key'     => 'main_site_recommend',
+  'numposts'	  => -1,
+  'post_status'	  => 'publish',
+  'orderby'	  => 'title',
+  'order'         => 'ASC',
+  'value'	=> 'tak'
+));
+?>
  ?>
