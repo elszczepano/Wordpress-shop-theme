@@ -22,23 +22,12 @@
         if($recommended_slider): foreach( $recommended_slider as $product ):?>
         <a href="<?php echo get_the_permalink($product); ?>">
           <div class="recommended-products-carousel-tile">
-            <h2><?php echo get_the_title($product); ?></h2>
+            <h2 class="recommended-products-heading"><?php echo get_the_title($product); ?></h2>
             <div class="recommended-product-thumbnail" style="background-image:url('<?php echo get_the_post_thumbnail_url($product); ?>')"></div>
             <h3 class="recommended-product-price"><?php echo ($product->_regular_price)." ".get_woocommerce_currency_symbol(); ?></h3>
           </div>
         </a>
     <?php endforeach; endif; ?>
-    <!--
-    <div class="recommended-products-carousel-tile">3</div>
-    <div class="recommended-products-carousel-tile">4</div>
-    <div class="recommended-products-carousel-tile">5</div>
-    <div class="recommended-products-carousel-tile">6</div>
-    <div class="recommended-products-carousel-tile">7</div>
-    <div class="recommended-products-carousel-tile">8</div>
-    <div class="recommended-products-carousel-tile">9</div>
-    <div class="recommended-products-carousel-tile">10</div>
-    <div class="recommended-products-carousel-tile">11</div>
-    <div class="recommended-products-carousel-tile">12</div> -->
   </div>
 </div>
 <div class="latest-products-box">

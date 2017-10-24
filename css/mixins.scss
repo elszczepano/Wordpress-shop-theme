@@ -21,3 +21,8 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+@mixin display-image {
+  display: block;
+  margin: 0 auto;
+  min-height: 300px;
+}

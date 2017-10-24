@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "promo-carousel";
+@import "recommended-carousel";
 @import "single-product";
 @import "cart";
 @import "header";
@@ -12,18 +13,6 @@
 }
 .modal-body .input-group {
   padding: 1rem 0;
-}
-.recommended-products-box {
-  background-color: #eee;
-  .recommended-products-header {
-    @include box-header;
-  }
-  .recommended-products-carousel {
-    .recommended-products-carousel-tile {
-      background-color: #fff;
-      margin:0 1rem;
-    }
-  }
 }
 .latest-products-box {
   .latest-products-header {
@@ -42,9 +31,7 @@
       a {
         @include disable-link;
         img {
-          display: block;
-          margin: 0 auto;
-          min-height: 300px;
+          @include display-image;
         }
         h2 {
           @include box-header;
