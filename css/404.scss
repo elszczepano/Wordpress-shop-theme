@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+.container-404 {
+  height: 100vh;
+  div {
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    span {
+      font-size: 20rem;
+      width: 100%;
+    }
+    h1, h2, span {
+      padding: 1rem 0;
+    }
+    h3 {
+      font-size: 1rem;
+      a {
+        color: $theme-color;
+      }
+      a:hover {
+        color: $theme-color-light;
+      }
+    }
+  }
+}
