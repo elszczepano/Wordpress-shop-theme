@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+.static-page-header, .err-page-header {
+  text-align: center;
+  margin: 2rem;
+}
+.err-page-link {
+  text-align: center;
+  padding: 2rem;
+  transition: 0.3s all;
+  @include disable-link;
+  @include color-theme-light;
+}
+.err-page-link:hover {
+  @include color-theme-lighter;
+}

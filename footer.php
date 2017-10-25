@@ -23,17 +23,17 @@
       <div>
         <h4>O firmie:</h4>
         <ul>
-          <li><a href="#">Nasze sklepy</a></li>
-          <li><a href="#">Regulamin</a></li>
-          <li><a href="#">Polityka prywatności</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/nasze-sklepy' ?>">Nasze sklepy</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/regulamin' ?>">Regulamin</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/polityka-prywatnosci' ?>">Polityka prywatności</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/kontakt' ?>">Kontakt</a></li>
         </ul>
       </div>
       <div>
         <h4>Serwis:</h4>
         <ul>
-          <li><a href="#">Dział obsługi klienta</a></li>
-          <li><a href="#">Zwroty i reklamacje</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/obsluga-klienta' ?>">Dział obsługi klienta</a></li>
+          <li><a href="<?php echo get_template_directory_uri().'/reklamacje' ?>">Zwroty i reklamacje</a></li>
         </ul>
       </div>
       <div>
