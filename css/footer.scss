@@ -19,6 +19,10 @@
           @include disable-link;
           color: $theme-color-darker;
           transition: 0.3s all;
+          span{
+            font-size: 1.5rem;
+            padding-right: 0.3rem;
+          }
           }
         a:hover {
          color: $theme-color;

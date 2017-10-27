@@ -41,6 +41,11 @@
         <ul>
           <li><strong>+48 784 342 533</strong></li>
           <li><a href="mailto:kontakt@luxwatch.pl">kontakt@luxwatch.pl</a></li>
+          <li>
+            <a href="http://facebook.com"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
+            <a href="http://twitter.com"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+            <a href="http://instagram.com"><span class="fa fa-instagram" aria-hidden="true"></span></a> 
+          </li>
         </ul>
       </div>
     </div>
