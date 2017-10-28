@@ -17,7 +17,7 @@
     wp_enqueue_script( 'owl_js', get_template_directory_uri() . '/libs/owlcarousel/dist/owl.carousel.min.js');
     wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js');
     wp_enqueue_script( 'carousel', get_template_directory_uri() . '/scripts/carousel-config.js');
-    if(is_home())
+    if(is_home()||is_search())
     {
         wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/home-gallery.js');
     }

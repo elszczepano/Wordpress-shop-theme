@@ -30,9 +30,9 @@
     <?php endforeach; endif; ?>
   </div>
 </div>
-<div class="latest-products-box">
-  <h2 class="latest-products-header">Najnowsze produkty</h2>
-  <ul class="latest-products d-flex flex-wrap">
+<div class="catalog-products-box">
+  <h2 class="catalog-products-header">Najnowsze produkty</h2>
+  <ul class="catalog-products d-flex flex-wrap">
     <?php
   		$args = array(
   			'post_type' => 'product',
