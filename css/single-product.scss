@@ -37,12 +37,16 @@
 
       }
       button {
-        background-color: $theme-color-light;
-        color: $theme-color-darker;
+        @include color-theme-light;
         border: none;
         outline: none;
         padding: 0.5rem;
         font-size: 1.4rem;
+        cursor: pointer;
+        transition: 0.3s all;
+      }
+      button:hover {
+        @include color-theme-lighter;
       }
     }
     .product_meta {
