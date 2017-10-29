@@ -17,7 +17,7 @@
       a {
         @include disable-link;
         img {
-          @include display-image;
+          @include catalog-image;
         }
         h2 {
           @include box-header;

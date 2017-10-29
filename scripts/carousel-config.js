@@ -22,7 +22,7 @@ $('.promo-prev').click(function() {
 //recommended products carousel init
 $('.recommended-products-carousel').owlCarousel({
     loop: true,
-    autoplayTimeout: 12000,
+    autoplayTimeout: 7000,
     smartSpeed: 700,
     nav: false,
     items: 3,

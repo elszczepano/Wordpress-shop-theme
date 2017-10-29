@@ -2,15 +2,14 @@
 <?php do_action('woocommerce_before_cart');?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
   <?php do_action( 'woocommerce_before_cart_table' ); ?>
-  <table>
+  <table class="cart-table container">
     <thead>
-      <tr>
-        <th class="product-remove">&nbsp;</th>
-  				<th class="product-thumbnail">&nbsp;</th>
-  				<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-  				<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
-  				<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-  				<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+      <tr class="row">
+  				<th class="col-2 product-thumbnail">&nbsp;</th>
+  				<th class="col-5 product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
+  				<th class="col-2 product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
+  				<th class="col-2 product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
+          <th class="col-1 product-remove">&nbsp;</th>
       </tr>
     </thead>
     <tbody>
@@ -22,19 +21,8 @@
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ):
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 			?>
-      <tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-        <td class="product-remove">
-					<?php
-						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-							'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-							__( 'Remove this item', 'woocommerce' ),
-							esc_attr( $product_id ),
-							esc_attr( $_product->get_sku() )
-						), $cart_item_key );
-					?>
-				</td>
-        <td class="product-thumbnail">
+      <tr class="row woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+        <td class="col-2 product-thumbnail">
           <?php
 						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 						if ( ! $product_permalink ) {
@@ -44,7 +32,7 @@
 						}
 					?>
         </td>
-        <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+        <td class="col-5 product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
           <?php
 						if ( ! $product_permalink ) {
 							echo apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;';
@@ -57,12 +45,12 @@
 						}
 					?>
         </td>
-        <td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+        <td class="col-2 product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
 					<?php
 						echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 					?>
 				</td>
-        <td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+        <td class="col-2 product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
           <?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" >', $cart_item_key );
@@ -78,11 +66,17 @@
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 					 ?>
           </td>
-          <td class="product-subtotal" data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
-						?>
-					</td>
+          <td class="col-1 product-remove">
+  					<?php
+  						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
+  							'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s"><span class="fa fa-trash-o" aria-hidden="true"></span></a>',
+  							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
+  							__( 'Remove this item', 'woocommerce' ),
+  							esc_attr( $product_id ),
+  							esc_attr( $_product->get_sku() )
+  						), $cart_item_key );
+  					?>
+  				</td>
       </tr>
       <?php endif; endforeach; ?>
       <?php do_action( 'woocommerce_cart_contents' ); ?>
