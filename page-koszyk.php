@@ -86,13 +86,13 @@
             <div class="col-5 input-group coupon">
               <input type="text" name="coupon_code" id="coupon_code" class="input-text form-control" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" aria-label="Search for...">
               <span class="input-group-btn">
-                <button class="btn theme-layout button " name="apply_coupon" type="submit"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
+                <input type="submit" class="btn theme-layout button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>">
               </span>
               <?php do_action( 'woocommerce_cart_coupon' ); ?>
             </div>
 					<?php endif; ?>
           <div class="col-2">
-            <button class="btn theme-layout button " name="update_cart" type="submit"><?php esc_attr_e( 'Update cart', 'woocommerce' ); ?></button>
+            <input type="submit" class="btn theme-layout button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>">
   					<?php do_action( 'woocommerce_cart_actions' ); ?>
           </div>
 					<?php wp_nonce_field( 'woocommerce-cart' ); ?>
