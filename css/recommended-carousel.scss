@@ -18,7 +18,7 @@
           padding: 0.5rem 0;
         }
         .recommended-product-thumbnail {
-          @include display-image;
+          @include catalog-image;
           @include background-image;
           background-size: 80%;
         }

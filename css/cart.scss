@@ -3,18 +3,51 @@
 .cart-table {
   thead {
     tr {
+      padding: 1rem 0;
+      border-bottom: $line-separator;
+      font-size: 1.2rem;
       th {
-        text-align: center;
         color: $theme-color;
+        padding: 0;
       }
     }
   }
-  tbody tr, thead tr {
+  tbody tr {
       padding: 1rem 0;
       border-bottom: $line-separator;
       margin: 1rem 0;
+      .actions {
+        padding: 2rem 0;
+      }
   }
-  tbody tr {
-    
+  tbody .product-row {
+    td {
+      padding: 0;
+      display:flex;
+      align-self: center;
+      font-weight: bold;
+      a {
+        color: $theme-color;
+      }
+      a:hover {
+        color: $theme-color-light;
+      }
+    }
+    .product-thumbnail a img {
+      display: block;
+      margin: 0 auto;
+      width: 5rem;
+      height: auto;
+    }
+    .product-quantity input {
+      width: 5rem;
+      border-radius: 5px;
+      outline: none;
+      padding: 0.3rem;
+      border: $line-separator;
+    }
+    .product-remove {
+      font-size: 1.2rem;
+    }
   }
 }
