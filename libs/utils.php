@@ -52,4 +52,14 @@ $recommended_slider = get_posts(array(
 ));
 
 add_filter( 'wc_add_to_cart_message_html', '__return_null' );
+
+function hide_coupon_field_on_checkout( $enabled ) {
+	if ( is_checkout() ) {
+		$enabled = false;
+	}
+	return $enabled;
+}
+add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
+
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
 ?>

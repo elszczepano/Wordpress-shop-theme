@@ -21,6 +21,9 @@
     {
         wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/home-gallery.js');
     }
+    if ( is_checkout() ) {
+  		wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/checkout.js');
+  	}
   }
 
   add_action('wp_enqueue_scripts', 'theme_css' );
