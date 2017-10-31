@@ -1,2 +1,9 @@
 @import "variables";
 @import "mixins";
+.col2-set {
+  display: flex;
+  justify-content: center;
+  div {
+    padding:0;
+  }
+}
