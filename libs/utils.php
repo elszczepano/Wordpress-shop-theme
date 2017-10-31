@@ -60,6 +60,5 @@ function hide_coupon_field_on_checkout( $enabled ) {
 	return $enabled;
 }
 add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
-
 add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
 ?>

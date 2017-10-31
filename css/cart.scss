@@ -48,16 +48,40 @@
     }
     .product-remove {
       font-size: 1.2rem;
+      a {
+        color: red;
+      }
+      a:hover {
+        color: #DD1111;
+      }
     }
   }
 }
 .cart-collaterals .cart_totals{
+    margin-right: 1rem;
   h2 {
     text-align: right;
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 0;
   }
   h2::after {
     content: ':';
+  }
+  table {
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .wc-proceed-to-checkout {
+      text-align: right;
+    a {
+      @include disable-link;
+      @include theme-layout;
+      padding: .5rem .75rem;
+      border-radius: .25rem
+    }
+    a:hover {
+      @include theme-layout-hover;
+    }
   }
 }
