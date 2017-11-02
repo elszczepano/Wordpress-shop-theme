@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.login-container .woocommerce .u-columns div {
+  form {
+    border: none;
+    padding: 0;
+    p .woocommerce-password-strength {
+      margin-top: 1rem;
+    }
+  }
+  .woocommerce-form-login, .register {
+    margin: 1rem;
+     .form-control:nth-child(3) {
+      display: inherit;
+      width: initial;
+      @include theme-layout;
+    }
+    .form-control:nth-child(3):hover {
+      @include theme-layout-hover;
+    }
+    p .woocommerce-form__label-for-checkbox{
+      display: none;
+    }
+  }
+}
