@@ -61,4 +61,11 @@ function hide_coupon_field_on_checkout( $enabled ) {
 }
 add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
 add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
+
+function remove_password_strength() {
+	if ( wp_script_is( 'wc-password-strength-meter', 'enqueued' ) ) {
+		wp_dequeue_script( 'wc-password-strength-meter' );
+	}
+}
+add_action( 'wp_print_scripts', 'remove_password_strength', 100 );
 ?>
