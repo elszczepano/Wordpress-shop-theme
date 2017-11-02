@@ -24,6 +24,9 @@
     if ( is_checkout() ) {
   		wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/checkout.js');
   	}
+    if (is_account_page()) {
+      wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/my-account.js');
+    }
   }
 
   add_action('wp_enqueue_scripts', 'theme_css' );
@@ -46,5 +49,4 @@
         $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
     }
   } );
-
  ?>
