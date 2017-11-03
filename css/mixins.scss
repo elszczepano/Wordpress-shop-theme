@@ -8,13 +8,13 @@
   text-decoration: none;
   color: #000;
 }
-@mixin color-theme-light {
-  background-color: $theme-color-light;
-  color: $theme-color-darker;
+@mixin color-theme {
+  background-color: $gunmetal;
+  color: $warm-yellow;
 }
-@mixin color-theme-lighter {
-  background-color: $theme-color-lighter;
-  color: $theme-color-dark;
+@mixin color-theme-hover {
+  background-color: $navy-blue;
+  color: $warm-yellow;
 }
 @mixin background-image {
   background-position: center center;
@@ -27,14 +27,13 @@
   min-height: 300px;
 }
 @mixin theme-layout {
-  background-color: $theme-color-light;
-  color: $theme-color-darker;
-  border: 1px solid $theme-color-light;
+  background-color: $gunmetal;
+  color: $warm-yellow;
+  border: 1px solid $gunmetal;
   transition: 0.3s all;
   cursor: pointer;
 }
 @mixin theme-layout-hover {
-  background-color: $theme-color;
-  color: $theme-color-darker;
-  border-color: $theme-color;
+  background-color: $navy-blue;
+  border-color: $navy-blue;
 }

@@ -37,7 +37,7 @@
 
       }
       button {
-        @include color-theme-light;
+        @include color-theme;
         border: none;
         outline: none;
         padding: 0.5rem;
@@ -46,19 +46,19 @@
         transition: 0.3s all;
       }
       button:hover {
-        @include color-theme-lighter;
+        @include color-theme-hover;
       }
     }
     .product_meta {
       font-weight: 100;
       a {
-        color: $theme-color-light;
+        color: $warm-yellow;
       }
     }
   }
 }
 .product-description .wc-tabs-wrapper {
-  border-top: 1px solid $theme-color-darker;
+  border-top: 1px solid $navy-blue;
   padding-top: 2rem;
   ul {
     margin: 0;
@@ -67,7 +67,7 @@
     justify-content: space-around;
     list-style-type: none;
     li a{
-      color: $theme-color-light;
+      color: $warm-yellow;
       text-transform: uppercase;
       font-size: 1.4rem;
     }
@@ -84,7 +84,7 @@
 
     }
     a {
-      color: $theme-color-light;
+      color: $warm-yellow;
       text-decoration: none;
     }
   }

@@ -25,7 +25,7 @@
           min-height: 6rem;
         }
         .price {
-          @include color-theme-light;
+          @include color-theme;
           margin: 0;
           transition: 0.3s all;
           display: block;
@@ -38,7 +38,7 @@
           }
         }
         .price:hover {
-          @include color-theme-lighter;
+          @include color-theme-hover;
         }
       }
       a {

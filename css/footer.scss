@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 .main-footer {
-  @include color-theme-light
+  @include color-theme;
   margin-top: 2rem;
   div {
     padding: 1rem;
@@ -17,7 +17,7 @@
         padding-top: 0.5rem;
         a {
           @include disable-link;
-          color: $theme-color-darker;
+          color: $warm-yellow;
           transition: 0.3s all;
           span{
             font-size: 1.5rem;
@@ -25,7 +25,7 @@
           }
           }
         a:hover {
-         color: $theme-color;
+         color: $rusty-red;
           }
       }
     }

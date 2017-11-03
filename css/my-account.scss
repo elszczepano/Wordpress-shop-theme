@@ -41,12 +41,12 @@
       display: none;
     }
     .woocommerce-LostPassword a{
-      color: $theme-color;
+      color: $warm-yellow;
       transition: 0.3s;
       text-decoration: none;
     }
     .woocommerce-LostPassword a:hover {
-      color: $theme-color-lighter;
+      color: $rusty-red;
     }
   }
 }

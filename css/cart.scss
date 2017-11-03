@@ -7,7 +7,7 @@
       border-bottom: $line-separator;
       font-size: 1.2rem;
       th {
-        color: $theme-color;
+        color: $navy-blue;
         padding: 0;
       }
     }
@@ -27,10 +27,10 @@
       align-self: center;
       font-weight: bold;
       a {
-        color: $theme-color;
+        color: $warm-yellow;
       }
       a:hover {
-        color: $theme-color-light;
+        color: $rusty-red;
       }
     }
     .product-thumbnail a img {

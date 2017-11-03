@@ -9,8 +9,8 @@
   padding: 2rem;
   transition: 0.3s all;
   @include disable-link;
-  @include color-theme-light;
+  @include color-theme;
 }
 .err-page-link:hover {
-  @include color-theme-lighter;
+  @include color-theme-hover;
 }
