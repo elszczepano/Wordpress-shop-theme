@@ -8,7 +8,7 @@
     padding: 0 1rem;
     max-width: 50%;
     .product-gallery-item {
-      min-height: 300px;
+      min-height: 400px;
       @include background-image;
     }
   }
