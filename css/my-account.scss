@@ -18,7 +18,7 @@
         @include theme-layout;
     }
     p .button:hover {
-        @include theme-layout-hover;
+        color: $ochre;
     }
 }
 .login-container .woocommerce .u-columns div {
@@ -35,18 +35,14 @@
       @include theme-layout;
     }
     .form-control:nth-child(3):hover {
-      @include theme-layout-hover;
+      color: $ochre;
     }
     p .woocommerce-form__label-for-checkbox{
       display: none;
     }
     .woocommerce-LostPassword a{
-      color: $pastel-peach;
-      transition: 0.3s;
-      text-decoration: none;
-    }
-    .woocommerce-LostPassword a:hover {
       color: $ochre;
+      text-decoration: none;
     }
   }
 }

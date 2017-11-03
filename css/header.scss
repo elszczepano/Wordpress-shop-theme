@@ -41,5 +41,5 @@
   @include theme-layout;
 }
 .theme-layout:hover {
-  @include theme-layout-hover;
+  color: $ochre;
 }

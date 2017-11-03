@@ -17,18 +17,19 @@
     wp_enqueue_script( 'owl_js', get_template_directory_uri() . '/libs/owlcarousel/dist/owl.carousel.min.js');
     wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js');
     wp_enqueue_script( 'carousel', get_template_directory_uri() . '/scripts/carousel-config.js');
-    if(is_home()||is_search())
-    {
-        wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/home-gallery.js');
+    if(is_product_category()) {
+        wp_enqueue_script('category', get_template_directory_uri() . '/scripts/category.js');
+    }
+    if(is_home()||is_product_category()||is_search()) {
+        wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/catalog.js');
     }
     if ( is_checkout() ) {
-  		wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/checkout.js');
+  		wp_enqueue_script('checkout', get_template_directory_uri() . '/scripts/checkout.js');
   	}
     if (is_account_page()) {
-      wp_enqueue_script('home-gallery', get_template_directory_uri() . '/scripts/my-account.js');
+      wp_enqueue_script('my-account', get_template_directory_uri() . '/scripts/my-account.js');
     }
   }
-
   add_action('wp_enqueue_scripts', 'theme_css' );
   add_action('wp_enqueue_scripts', 'theme_js');
   add_filter('show_admin_bar', '__return_false');
