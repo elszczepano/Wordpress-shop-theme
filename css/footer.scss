@@ -17,7 +17,7 @@
         padding-top: 0.5rem;
         a {
           @include disable-link;
-          color: $warm-yellow;
+          color: $pastel-peach;
           transition: 0.3s all;
           span{
             font-size: 1.5rem;
@@ -25,7 +25,7 @@
           }
           }
         a:hover {
-         color: $rusty-red;
+         color: $ochre;
           }
       }
     }

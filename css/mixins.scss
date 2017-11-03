@@ -9,12 +9,11 @@
   color: #000;
 }
 @mixin color-theme {
-  background-color: $gunmetal;
-  color: $warm-yellow;
+  background-color: $black;
+  color: $pastel-peach;
 }
 @mixin color-theme-hover {
-  background-color: $navy-blue;
-  color: $warm-yellow;
+  color: $ochre;
 }
 @mixin background-image {
   background-position: center center;
@@ -27,13 +26,13 @@
   min-height: 300px;
 }
 @mixin theme-layout {
-  background-color: $gunmetal;
-  color: $warm-yellow;
-  border: 1px solid $gunmetal;
+  background-color: $black;
+  color: $pastel-peach;
+  border: 1px solid $black;
   transition: 0.3s all;
   cursor: pointer;
 }
 @mixin theme-layout-hover {
-  background-color: $navy-blue;
-  border-color: $navy-blue;
+  background-color: $cool-grey;
+  border-color: $cool-grey;
 }

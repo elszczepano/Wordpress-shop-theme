@@ -52,13 +52,13 @@
     .product_meta {
       font-weight: 100;
       a {
-        color: $warm-yellow;
+        color: $ochre;
       }
     }
   }
 }
 .product-description .wc-tabs-wrapper {
-  border-top: 1px solid $navy-blue;
+  border-top: 1px solid $cool-grey;
   padding-top: 2rem;
   ul {
     margin: 0;
@@ -67,7 +67,7 @@
     justify-content: space-around;
     list-style-type: none;
     li a{
-      color: $warm-yellow;
+      color: $ochre;
       text-transform: uppercase;
       font-size: 1.4rem;
     }
@@ -84,7 +84,7 @@
 
     }
     a {
-      color: $warm-yellow;
+      color: $ochre;
       text-decoration: none;
     }
   }
