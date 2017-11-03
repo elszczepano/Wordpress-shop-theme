@@ -9,14 +9,14 @@
   <body>
     <div class="login-bar">
       <ul>
-        <li><a href="<?php echo get_template_directory_uri().'/moje-konto'; ?>">
+        <li><a href="<?php echo get_template_directory_uri() . '/moje-konto'; ?>">
           <?php if(is_user_logged_in()):?>
           Moje konto
         <?php else: ?>
           Zaloguj się
         <?php endif;?>
         </a></li>
-        <li><a href="<?php echo get_template_directory_uri().'/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
+        <li><a href="<?php echo get_template_directory_uri() . '/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
       </ul>
     </div>
   <main class="container">

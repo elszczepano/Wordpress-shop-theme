@@ -14,7 +14,7 @@
           'order'      => $order,
           'hide_empty' => $hide_empty,
           );
-          $product_categories = get_terms( 'product_cat', $cat_args );
+          $product_categories = get_terms( 'product_cat' , $cat_args );
           foreach ($product_categories as $category): ?>
           <li><a href="<?php echo get_term_link($category); ?>"><?php echo $category->name; ?></a></li>
           <?php endforeach;?>
@@ -23,17 +23,17 @@
       <div>
         <h4>O firmie:</h4>
         <ul>
-          <li><a href="<?php echo get_template_directory_uri().'/nasze-sklepy' ?>">Nasze sklepy</a></li>
-          <li><a href="<?php echo get_template_directory_uri().'/regulamin' ?>">Regulamin</a></li>
-          <li><a href="<?php echo get_template_directory_uri().'/polityka-prywatnosci' ?>">Polityka prywatności</a></li>
-          <li><a href="<?php echo get_template_directory_uri().'/kontakt' ?>">Kontakt</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/nasze-sklepy' ?>">Nasze sklepy</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/regulamin' ?>">Regulamin</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/polityka-prywatnosci' ?>">Polityka prywatności</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/kontakt' ?>">Kontakt</a></li>
         </ul>
       </div>
       <div>
         <h4>Serwis:</h4>
         <ul>
-          <li><a href="<?php echo get_template_directory_uri().'/obsluga-klienta' ?>">Dział obsługi klienta</a></li>
-          <li><a href="<?php echo get_template_directory_uri().'/reklamacje' ?>">Zwroty i reklamacje</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/obsluga-klienta' ?>">Dział obsługi klienta</a></li>
+          <li><a href="<?php echo get_template_directory_uri() . '/reklamacje' ?>">Zwroty i reklamacje</a></li>
         </ul>
       </div>
       <div>
@@ -44,7 +44,7 @@
           <li>
             <a href="http://facebook.com"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
             <a href="http://twitter.com"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-            <a href="http://instagram.com"><span class="fa fa-instagram" aria-hidden="true"></span></a> 
+            <a href="http://instagram.com"><span class="fa fa-instagram" aria-hidden="true"></span></a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 //promo caraousel init
-$('.promo-carousel').owlCarousel({
+$('.promo-carousel').owlCarousel( {
     loop: true,
     autoplayTimeout: 8000,
     smartSpeed: 700,
@@ -11,16 +11,17 @@ $('.promo-carousel').owlCarousel({
     rewind: true
 })
 //promo carousel controls
-let owl = $('.promo-carousel');
-owl.owlCarousel();
+let promoControls = $('.promo-carousel');
+promoControls.owlCarousel();
+
 $('.promo-next').click(function() {
-    owl.trigger('next.owl.carousel');
+    promoControls.trigger('next.owl.carousel');
 })
 $('.promo-prev').click(function() {
-    owl.trigger('prev.owl.carousel');
+    promoControls.trigger('prev.owl.carousel');
 })
 //recommended products carousel init
-$('.recommended-products-carousel').owlCarousel({
+$('.recommended-products-carousel').owlCarousel( {
     loop: true,
     autoplayTimeout: 7000,
     smartSpeed: 700,
@@ -31,7 +32,7 @@ $('.recommended-products-carousel').owlCarousel({
     rewind: true
 })
 // single product gallery carousel init
-$('.product-gallery-carousel').owlCarousel({
+$('.product-gallery-carousel').owlCarousel( {
     loop: true,
     smartSpeed: 700,
     autoplay: true,

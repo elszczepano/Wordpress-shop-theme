@@ -1,11 +1,11 @@
 <?php
 //remove unnecessary functions
 function unregister_tags() {
-    unregister_taxonomy_for_object_type( 'post_tag', 'post' );
+    unregister_taxonomy_for_object_type( 'post_tag' , 'post' );
 }
-add_action( 'init', 'unregister_tags' );
+add_action( 'init' , 'unregister_tags' );
 
-add_action('init', function() {
+add_action('init' , function() {
     register_taxonomy('product_tag', 'product', [
         'public'            => false,
         'show_ui'           => false,
@@ -22,23 +22,23 @@ add_action( 'admin_init' , function() {
     }, 100);
 });
 
-add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+add_filter( 'woocommerce_product_tabs' , 'wcs_woo_remove_reviews_tab' , 98 );
     function wcs_woo_remove_reviews_tab($tabs) {
     unset($tabs['reviews']);
     return $tabs;
   }
 
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+remove_action( 'woocommerce_after_single_product_summary' , 'woocommerce_output_related_products', 20 );
 
 function remove_posts_menu() {
     remove_menu_page('edit.php');
 }
-add_action('admin_init', 'remove_posts_menu');
+add_action('admin_init' , 'remove_posts_menu');
 
-function wpse120418_unregister_categories() {
-    register_taxonomy( 'category', array() );
+function unregister_categories() {
+    register_taxonomy( 'category' , array() );
 }
-add_action( 'init', 'wpse120418_unregister_categories' );
+add_action( 'init', 'unregister_categories' );
 
 //Advanced Custom Fields - recommended products
 $recommended_slider = get_posts(array(
@@ -51,7 +51,7 @@ $recommended_slider = get_posts(array(
   'value'	=> 'tak'
 ));
 
-add_filter( 'wc_add_to_cart_message_html', '__return_null' );
+add_filter( 'wc_add_to_cart_message_html' , '__return_null' );
 
 function hide_coupon_field_on_checkout( $enabled ) {
 	if ( is_checkout() ) {
@@ -59,6 +59,6 @@ function hide_coupon_field_on_checkout( $enabled ) {
 	}
 	return $enabled;
 }
-add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
-add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
+add_filter( 'woocommerce_coupons_enabled' , 'hide_coupon_field_on_checkout' );
+add_filter( 'woocommerce_enable_order_notes_field' , '__return_false' );
 ?>

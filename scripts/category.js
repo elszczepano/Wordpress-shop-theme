@@ -1,6 +1,6 @@
 
-document.querySelector('.woocommerce-breadcrumb').setAttribute('aria-label', 'breadcrumb');
-document.querySelector('.woocommerce-breadcrumb').setAttribute('role', 'navigation');
+document.querySelector('.woocommerce-breadcrumb').setAttribute('aria-label' , 'breadcrumb');
+document.querySelector('.woocommerce-breadcrumb').setAttribute('role' , 'navigation');
 document.querySelector('.woocommerce-breadcrumb').classList.add('breadcrumb');
 document.querySelector('.woocommerce-breadcrumb a').classList.add('breadcrumb-item');
 document.querySelector('#sidebar').remove();

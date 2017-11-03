@@ -24,7 +24,7 @@
           <div class="recommended-products-carousel-tile">
             <h2 class="recommended-products-heading"><?php echo get_the_title($product); ?></h2>
             <div class="recommended-product-thumbnail" style="background-image:url('<?php echo get_the_post_thumbnail_url($product); ?>')"></div>
-            <h3 class="recommended-product-price"><?php echo ($product->_regular_price)." ".get_woocommerce_currency_symbol(); ?></h3>
+            <h3 class="recommended-product-price"><?php echo ($product->_regular_price) . " " . get_woocommerce_currency_symbol(); ?></h3>
           </div>
         </a>
     <?php endforeach; endif; ?>
@@ -41,7 +41,7 @@
   		$loop = new WP_Query( $args );
   		if ( $loop->have_posts() ) {
   			while ( $loop->have_posts() ) : $loop->the_post();
-  				wc_get_template_part( 'content', 'product' );
+  				wc_get_template_part( 'content' , 'product' );
   			endwhile;
   		} else {
   			echo __( 'Nie znaleziono produktów.' );
