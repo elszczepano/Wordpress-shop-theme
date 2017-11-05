@@ -26,3 +26,12 @@
 .err-page-link:hover {
   @include color-theme-hover;
 }
+.wpcf7-form {
+  p {
+    display: flex;
+    justify-content: center;
+    input[type="submit"] {
+      width: inherit;
+    }
+  }
+}
