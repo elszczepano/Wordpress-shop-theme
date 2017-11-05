@@ -16,10 +16,9 @@
     li {
       padding:0 0.5rem;
       a {
+        @include link-hover;
         cursor: pointer;
-        transition: 0.3s color;
         color: #000;
-        text-decoration: none;
         }
       a:hover {
         color: $ochre;

@@ -27,7 +27,8 @@
       align-self: center;
       font-weight: bold;
       a {
-        color: $pastel-peach;
+        color: $ochre;
+        @include link-hover;
       }
       a:hover {
         color: $ochre;

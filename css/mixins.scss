@@ -8,6 +8,10 @@
   text-decoration: none;
   color: #000;
 }
+@mixin link-hover {
+  text-decoration: none;
+  transition: .3s color;
+}
 @mixin color-theme {
   background-color: $black;
   color: $pastel-peach;

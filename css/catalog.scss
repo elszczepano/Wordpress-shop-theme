@@ -51,7 +51,7 @@
   }
 }
 .breadcrumb-item {
-  transition: .3s color;
+  @include link-hover;
   color: $ochre;
 }
 .breadcrumb-item:hover {

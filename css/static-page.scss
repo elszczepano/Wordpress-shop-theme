@@ -8,9 +8,8 @@
   p {
     font-size: 1.3rem;
     a {
-      @include disable-link;
+      @include link-hover;
       color: $ochre;
-      transition: 0.3s color;
     }
     a:hover {
       color: $pastel-peach;
