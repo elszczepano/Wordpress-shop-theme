@@ -31,3 +31,29 @@
         </div>
         </form>
     </header>
+    <ul class="nav nav-tabs main-topbar-menu">
+      <li class="nav-item">
+        <a class="nav-link active" href="<?php echo home_url(); ?>">Strona główna</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kategorie</a>
+        <div class="dropdown-menu">
+          <?php
+          $orderby = 'name';
+          $order = 'asc';
+          $hide_empty = false ;
+          $cat_args = array(
+          'orderby'    => $orderby,
+          'order'      => $order,
+          'hide_empty' => $hide_empty,
+          );
+          $product_categories = get_terms( 'product_cat' , $cat_args );
+          foreach ($product_categories as $category): ?>
+          <a class="dropdown-item" href="<?php echo get_term_link($category); ?>"><?php echo $category->name; ?></a>
+          <?php endforeach;?>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Promocje</a>
+      </li>
+    </ul>

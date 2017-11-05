@@ -42,3 +42,9 @@
 .theme-layout:hover {
   color: $ochre;
 }
+.main-topbar-menu {
+  margin-bottom: 1rem;
+  .nav-item a {
+      color: $ochre;
+  }
+}
