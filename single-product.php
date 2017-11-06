@@ -12,7 +12,10 @@
     <div class="col product-about">
       <?php do_action('woocommerce_single_product_summary'); ?>
       <?php if($product->get_stock_quantity()!=NULL): ?>
-      <span class="stock-quantity">Na magazynie: <span><?php echo $product->get_stock_quantity(); ?></span></span>
+      <span class="stock">Na magazynie: <span class="stock-quantity"><?php echo $product->get_stock_quantity(); ?></span> szt.</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
       <?php endif; ?>
     </div>
   </div>

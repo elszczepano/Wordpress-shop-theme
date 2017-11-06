@@ -62,9 +62,17 @@
     }
     .product_meta {
       font-weight: 100;
+      margin: 1rem 0;
       a {
         color: $ochre;
       }
+    }
+    .progress {
+      width: 50%;
+      margin: 1rem 0;
+    }
+    .stock {
+      font-size: 1.3rem;
     }
   }
 }
