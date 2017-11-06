@@ -31,7 +31,7 @@
           transition: 0.3s all;
         }
         .recommended-product-price:hover {
-          @include color-theme-hover;
+          color: $ochre;
         }
       }
     }

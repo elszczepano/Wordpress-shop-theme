@@ -39,7 +39,7 @@
           }
         }
         .price:hover {
-          @include color-theme-hover;
+          color: $ochre;
         }
       }
       a {
@@ -60,4 +60,12 @@
 }
 .woocommerce-result-count {
   display: none;
+}
+.error-box {
+  max-width: 100%;
+  flex: auto;
+  p a {
+    @include link-hover;
+    color: $ochre;
+  }
 }

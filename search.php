@@ -13,7 +13,12 @@
           wc_get_template_part( 'content', 'product' );
         endwhile;
       } else {
-        echo __( 'Nie znaleziono produktów.' );
+        ?>
+        <div class="error-box">
+          <p>Brak produktów odpowiadających Twoim wymaganiom. Jeśli nie znalazłeś swojego produktu to <a href="<?php echo get_template_directory_uri() . '/obsluga-klienta' ?>">skontaktuj się z nami</a>!</p>
+          <p>Powrót na <a href="<?php echo home_url(); ?>">stronę główną</a>.</p>
+        </div>
+        <?php
       }
       wp_reset_postdata();
       ?>

@@ -16,9 +16,6 @@
   background-color: $black;
   color: $pastel-peach;
 }
-@mixin color-theme-hover {
-  color: $ochre;
-}
 @mixin background-image {
   background-position: center center;
   background-repeat: no-repeat;

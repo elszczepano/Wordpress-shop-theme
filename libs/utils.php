@@ -50,9 +50,6 @@ $recommended_slider = get_posts(array(
   'order'         => 'ASC',
   'value'	=> 'tak'
 ));
-
-add_filter( 'wc_add_to_cart_message_html' , '__return_null' );
-
 function hide_coupon_field_on_checkout( $enabled ) {
 	if ( is_checkout() ) {
 		$enabled = false;

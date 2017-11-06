@@ -24,7 +24,7 @@
   @include color-theme;
 }
 .err-page-link:hover {
-  @include color-theme-hover;
+  color: $ochre;
 }
 .wpcf7-form {
   p {

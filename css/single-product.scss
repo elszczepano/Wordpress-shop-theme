@@ -1,5 +1,13 @@
 @import "variables";
 @import "mixins";
+.woocommerce-message {
+  margin:0;
+  border: none;
+}
+.wc-forward, .wc-forward:hover, .restore-item, .restore-item:hover {
+  text-decoration: none;
+  color: $ochre;
+}
 .product-container {
   margin-top: 2rem;
   justify-content: center;
@@ -46,7 +54,7 @@
         transition: 0.3s all;
       }
       button:hover {
-        @include color-theme-hover;
+        color: $ochre;
       }
     }
     .product_meta {
