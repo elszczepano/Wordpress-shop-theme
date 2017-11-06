@@ -11,6 +11,9 @@
     </div>
     <div class="col product-about">
       <?php do_action('woocommerce_single_product_summary'); ?>
+      <?php if($product->get_stock_quantity()!=NULL): ?>
+      <span class="stock-quantity">Na magazynie: <span><?php echo $product->get_stock_quantity(); ?></span></span>
+      <?php endif; ?>
     </div>
   </div>
   <div class="product-description">

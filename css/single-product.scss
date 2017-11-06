@@ -25,6 +25,9 @@
       font-size: 1.8rem;
       font-weight: 300;
     }
+    .in-stock {
+      display: none;
+    }
     .price::before {
       content: 'Cena: ';
       font-weight: bold;
