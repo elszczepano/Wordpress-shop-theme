@@ -8,13 +8,13 @@ if(document.querySelectorAll( 'input' )!=null) {
 const inputs = document.querySelectorAll( 'input' );
     $.each(inputs, function(i, elem) {
       elem.classList.add('form-control');
-});
+    });
 }
 if(document.querySelectorAll( 'textarea' )!=null) {
 const textareas = document.querySelectorAll( 'textarea' );
     $.each(textareas, function(i, elem) {
       elem.classList.add('form-control');
-});
+    });
 }
 if(document.querySelector( '.stock-quantity' )!=null) {
   const stockQuantity = parseInt(document.querySelector( '.stock-quantity' ).textContent);
