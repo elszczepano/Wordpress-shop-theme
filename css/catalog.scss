@@ -8,6 +8,11 @@
     padding: 0;
     margin: 0;
     margin-top: 2rem;
+    li.outofstock {
+      .product_type_simple {
+        display:none;
+      }
+    }
     li {
       list-style-type: none;
       padding: 1rem;

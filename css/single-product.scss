@@ -33,15 +33,20 @@
       font-weight: bold;
       font-size: 1.6rem;
     }
-    .price span {
-      font-weight: bold;
-      font-size: 1.6rem;
+    .price {
+      ins {
+        text-decoration: none;
+      }
+      span {
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
     }
     .cart {
       display: flex;
       margin-bottom: 1rem;
       .quantity .input-text {
-        max-width: 50px;
+        max-width: 70px;
         padding: 0.5rem;
         text-align: center;
         font-size: 1.4rem;
