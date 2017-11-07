@@ -24,7 +24,7 @@
           <div class="recommended-products-carousel-tile">
             <h2 class="recommended-products-heading"><?php echo get_the_title($product); ?></h2>
             <div class="recommended-product-thumbnail" style="background-image:url('<?php echo get_the_post_thumbnail_url($product); ?>')"></div>
-            <h3 class="recommended-product-price"><?php echo ($product->_regular_price) . " " . get_woocommerce_currency_symbol(); ?></h3>
+            <h3 class="recommended-product-price" data-toggle="tooltip" data-placement="bottom" title="Zobacz ofertę"><?php echo ($product->_regular_price) . " " . get_woocommerce_currency_symbol(); ?></h3>
           </div>
         </a>
     <?php endforeach; endif; ?>

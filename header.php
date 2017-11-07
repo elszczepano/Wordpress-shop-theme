@@ -16,7 +16,7 @@
           Zaloguj się
         <?php endif;?>
         </a></li>
-        <li><a href="<?php echo get_template_directory_uri() . '/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="Twój koszyk"><a href="<?php echo get_template_directory_uri() . '/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
       </ul>
     </div>
   <main class="container">
@@ -26,7 +26,7 @@
       </div>
         <form role="search" method="get" id="searchform" class="searchform col-12 col-md-6 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">
-            <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+            <button class="theme-layout input-group-addon" id="basic-addon1" data-toggle="tooltip" data-placement="bottom" title="Wyszukaj w sklepie"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
             <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
         </div>
         </form>
