@@ -37,7 +37,7 @@
 						if ( ! $product_permalink ) {
 							echo apply_filters( 'woocommerce_cart_item_name' , $_product->get_name() , $cart_item , $cart_item_key ) . '&nbsp;';
 						} else {
-							echo apply_filters( 'woocommerce_cart_item_name' , sprintf( '<a href="%s">%s</a>' , esc_url( $product_permalink ) , $_product->get_name() ) , $cart_item , $cart_item_key );
+							echo apply_filters( 'woocommerce_cart_item_name' , sprintf( '<a data-toggle="tooltip" data-placement="bottom" title="Zobacz produkt" href="%s">%s</a>' , esc_url( $product_permalink ) , $_product->get_name() ) , $cart_item , $cart_item_key );
 						}
 						echo WC()->cart->get_item_data( $cart_item );
 						if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {

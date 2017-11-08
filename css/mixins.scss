@@ -27,9 +27,9 @@
   min-height: 300px;
 }
 @mixin theme-layout {
-  background-color: $black;
-  color: $pastel-peach;
-  border: 1px solid $black;
+  background-color: $black !important;
+  color: $pastel-peach !important;
+  border: 1px solid $black !important;
   transition: 0.3s all;
   cursor: pointer;
 }

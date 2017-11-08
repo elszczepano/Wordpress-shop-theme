@@ -11,9 +11,9 @@
       <ul>
         <li><a href="<?php echo get_template_directory_uri() . '/moje-konto'; ?>">
           <?php if(is_user_logged_in()):?>
-          Moje konto
+          <span data-toggle="tooltip" data-placement="bottom" title="Twoje konto">Moje konto</span>
         <?php else: ?>
-          Zaloguj się
+          <span data-toggle="tooltip" data-placement="bottom" title="Strona logowania/rejestracji">Zaloguj się</span>
         <?php endif;?>
         </a></li>
         <li data-toggle="tooltip" data-placement="bottom" title="Twój koszyk"><a href="<?php echo get_template_directory_uri() . '/koszyk'; ?>"><span class="fa fa-shopping-basket modal-show" aria-hidden="true"></span></a></li>
@@ -35,7 +35,7 @@
       <li class="nav-item">
         <a class="nav-link active" href="<?php echo home_url(); ?>">Strona główna</a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="Kategorie produktów">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kategorie</a>
         <div class="dropdown-menu">
           <?php
@@ -54,6 +54,6 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Promocje</a>
+        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Najnowsze promocje!">Promocje</a>
       </li>
     </ul>
