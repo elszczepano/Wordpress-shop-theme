@@ -65,4 +65,14 @@ function woocommerce_account_menu_items($items) {
 }
 add_filter('woocommerce_account_menu_items', 'woocommerce_account_menu_items', 10, 1);
 add_action('check_admin_referer', 'logout_without_confirm', 10, 2);
+
+function my_acf_google_map_api( $api ){
+
+	$api['key'] = 'AIzaSyDGUrA5Er1HFiVjt6Wk13J4b7gp8sJceC4';
+
+	return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 ?>

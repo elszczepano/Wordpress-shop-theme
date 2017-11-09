@@ -14,9 +14,11 @@
     wp_enqueue_script( 'jq' , 'https://code.jquery.com/jquery-3.2.1.min.js');
     wp_enqueue_script( 'popper' , 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
     wp_enqueue_script( 'bootstrap_js' , 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js');
+    wp_enqueue_script( 'maps_API' , 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGUrA5Er1HFiVjt6Wk13J4b7gp8sJceC4');
     wp_enqueue_script( 'owl_js' , get_template_directory_uri() . '/libs/owlcarousel/dist/owl.carousel.min.js');
     wp_enqueue_script( 'main' , get_template_directory_uri() . '/scripts/main.js');
     wp_enqueue_script( 'carousel' , get_template_directory_uri() . '/scripts/carousel-config.js');
+    wp_enqueue_script( 'acf_map' , get_template_directory_uri() . '/scripts/acf-map.js');
     if(is_product_category()) {
         wp_enqueue_script('category' , get_template_directory_uri() . '/scripts/category.js');
     }
