@@ -54,6 +54,6 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Najnowsze promocje!">Promocje</a>
+        <a class="nav-link" href="<?php echo get_template_directory_uri() . '/promocje'; ?>" data-toggle="tooltip" data-placement="bottom" title="Najnowsze promocje!">Promocje</a>
       </li>
     </ul>
