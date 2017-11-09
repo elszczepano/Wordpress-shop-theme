@@ -16,7 +16,6 @@
     wp_enqueue_script( 'bootstrap_js' , 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js');
     wp_enqueue_script( 'maps_API' , 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGUrA5Er1HFiVjt6Wk13J4b7gp8sJceC4');
     wp_enqueue_script( 'owl_js' , get_template_directory_uri() . '/libs/owlcarousel/dist/owl.carousel.min.js');
-    wp_enqueue_script( 'main' , get_template_directory_uri() . '/scripts/main.js');
     wp_enqueue_script( 'carousel' , get_template_directory_uri() . '/scripts/carousel-config.js');
     wp_enqueue_script( 'acf_map' , get_template_directory_uri() . '/scripts/acf-map.js');
     if(is_product_category()) {
@@ -28,6 +27,8 @@
     if (is_account_page()) {
       wp_enqueue_script('my-account' , get_template_directory_uri() . '/scripts/my-account.js');
     }
+    wp_enqueue_script( 'main' , get_template_directory_uri() . '/scripts/main.js');
+    wp_enqueue_script( 'catalog' , get_template_directory_uri() . '/scripts/catalog.js');
   }
   add_action('wp_enqueue_scripts' , 'theme_css' );
   add_action('wp_enqueue_scripts' , 'theme_js');
