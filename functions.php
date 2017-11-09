@@ -20,9 +20,6 @@
     if(is_product_category()) {
         wp_enqueue_script('category' , get_template_directory_uri() . '/scripts/category.js');
     }
-    if(is_home()||is_product_category()||is_search()) {
-        wp_enqueue_script('home-gallery' , get_template_directory_uri() . '/scripts/catalog.js');
-    }
     if ( is_checkout() ) {
   		wp_enqueue_script('checkout' , get_template_directory_uri() . '/scripts/checkout.js');
   	}

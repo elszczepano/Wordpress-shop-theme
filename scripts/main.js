@@ -1,6 +1,14 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+if(document.querySelector( '.catalog-products' )!=null) {
+const catalogProducts = document.querySelector( '.catalog-products' ).children;
+    $.each(catalogProducts, function(i, elem) {
+      elem.classList.add('col-12' , 'col-sm-12' , 'col-md-6' , 'col-lg-4');
+});
+}
+
 if(document.querySelector( '.wpcf7-form' )!=null) {
   document.querySelector('.wpcf7').classList.add('d-flex' , 'justify-content-center');
 }
