@@ -16,6 +16,10 @@
   background-color: $black;
   color: $pastel-peach;
 }
+@mixin theme-link {
+  color: $ochre;
+  text-decoration: none;
+}
 @mixin background-image {
   background-position: center center;
   background-repeat: no-repeat;

@@ -56,8 +56,7 @@
   }
 }
 .breadcrumb-item {
-  @include link-hover;
-  color: $ochre;
+  @include theme-link;
 }
 .breadcrumb-item:hover {
   color: $black;
