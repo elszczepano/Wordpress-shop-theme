@@ -45,6 +45,7 @@
             <a href="http://facebook.com"><span class="fa fa-facebook-official" aria-hidden="true"></span></a>
             <a href="http://twitter.com"><span class="fa fa-twitter" aria-hidden="true"></span></a>
             <a href="http://instagram.com"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+            <a href="http://whatsapp.com"><span class="fa fa-whatsapp" aria-hidden="true"></span></a>
           </li>
         </ul>
       </div>
