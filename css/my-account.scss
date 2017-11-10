@@ -41,8 +41,7 @@
       display: none;
     }
     .woocommerce-LostPassword a {
-      color: $ochre;
-      text-decoration: none;
+      @include theme-link;
     }
   }
 }
@@ -53,4 +52,35 @@
   list-style-type: none;
   margin: 2rem 0;
   padding: 0;
+  li a {
+    @include theme-link;
+    font-weight: bold;
+    transition: .3s color;
+  }
+  li a:hover {
+    color: $pastel-peach;
+  }
+}
+.woocommerce-MyAccount-content {
+  margin: 4rem;
+  p a {
+    @include theme-link;
+  }
+  .u-column1 {
+    max-width: 50%;
+    header {
+      margin: 1rem;
+      a {
+        @include theme-link;
+      }
+      a:hover {
+        color: $pastel-peach;
+      }
+    }
+    address {
+      border: 1px solid #eee;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+  }
 }

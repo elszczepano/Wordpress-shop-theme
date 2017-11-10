@@ -20,6 +20,13 @@ const textareas = document.querySelectorAll( 'textarea' );
     });
 }
 
+if(document.querySelectorAll( 'select' )!=null) {
+const textareas = document.querySelectorAll( 'select' );
+    $.each(textareas, function(i, elem) {
+      elem.classList.add('form-control');
+    });
+}
+
 if(document.querySelector( '.stock-quantity' )!=null) {
   const stockQuantity = parseInt(document.querySelector( '.stock-quantity' ).textContent);
   const progressBar = document.querySelector( '.progress-bar' );
@@ -43,4 +50,8 @@ const catalogProducts = document.querySelector( '.catalog-products' ).children;
     $.each(catalogProducts, function(i, elem) {
       elem.classList.add('col-12' , 'col-sm-12' , 'col-md-6' , 'col-lg-4');
 });
+}
+
+if(document.querySelector('.woocommerce-Address')!= null) {
+  document.querySelector('.woocommerce-Address').classList.remove('col-1');
 }
