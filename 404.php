@@ -7,8 +7,8 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="container-404 d-flex justify-content-center align-items-center">
-      <div>
+    <div class="container d-flex justify-content-center">
+      <div class="box-404">
         <h1>404</h1>
         <h2>Strony nie znaleziono</h2>
         <span class="fa fa-frown-o" aria-hidden="true"></span>
