@@ -27,9 +27,8 @@
   }
 }
 .logo {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+  @include logo;
+  font-size: 3.6rem;
   padding: 1rem;
   box-sizing: border-box;
   div a {
@@ -47,4 +46,8 @@
   .nav-item a {
       color: $black;
   }
+}
+.navbar-brand {
+  @include logo;
+  font-size: 2rem;
 }

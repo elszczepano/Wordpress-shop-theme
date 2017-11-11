@@ -20,20 +20,20 @@
       </ul>
     </div>
   <main class="container">
-    <header class="main-header row d-flex justify-content-around">
+    <header class="d-none d-lg-flex main-header row justify-content-around">
       <div class="logo col-12 col-sm-4 col-md-4">
         <div class="text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
       </div>
-        <form role="search" method="get" id="searchform" class="searchform col-12 col-md-6 row align-items-center" action="http://localhost/sklep/">
+        <form role="search" method="get" id="searchform" class="searchform col-12 col-md-5 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">
             <button class="theme-layout input-group-addon" id="basic-addon1" data-toggle="tooltip" data-placement="bottom" title="Wyszukaj w sklepie"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
             <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
         </div>
         </form>
     </header>
-    <ul class="nav nav-tabs main-topbar-menu">
+    <ul class="d-none d-lg-flex nav nav-tabs main-topbar-menu">
       <li class="nav-item">
-        <a class="nav-link active" href="<?php echo home_url(); ?>">Strona główna</a>
+        <a class="nav-link active" href="<?php echo home_url(); ?>">Strona główna<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="Kategorie produktów">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kategorie</a>
@@ -57,3 +57,35 @@
         <a class="nav-link" href="<?php echo get_template_directory_uri() . '/promocje'; ?>" data-toggle="tooltip" data-placement="bottom" title="Najnowsze promocje!">Promocje</a>
       </li>
     </ul>
+    <nav class="d-flex d-lg-none navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="<?php echo home_url(); ?>">Strona główna<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kategorie</a>
+            <div class="dropdown-menu">
+              <?php
+              foreach ($product_categories as $category): ?>
+              <a class="dropdown-item" href="<?php echo get_term_link($category); ?>"><?php echo $category->name; ?></a>
+              <?php endforeach;?>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="<?php echo get_template_directory_uri() . '/promocje'; ?>">Promocje</a>
+          </li>
+        </ul>
+        <form role="search" method="get" id="searchform" class="searchform col-12 col-md-5 row align-items-center" action="http://localhost/sklep/">
+        <div class="input-group">
+            <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+            <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
+        </div>
+        </form>
+        <hr class="my-4">
+      </div>
+    </nav>

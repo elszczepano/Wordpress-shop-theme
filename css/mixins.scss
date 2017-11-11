@@ -41,3 +41,7 @@
   background-color: $cool-grey;
   border-color: $cool-grey;
 }
+@mixin logo {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
