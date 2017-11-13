@@ -6,7 +6,6 @@ $('.promo-carousel').owlCarousel( {
     margin: 10,
     nav: false,
     items: 1,
-    dots: false,
     autoplay: true,
     rewind: true
 })

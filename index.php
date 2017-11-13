@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 <div class="promo-carousel-box">
-    <div class="promo-controls">
-        <span class="fa fa-arrow-left promo-prev" aria-hidden="true"></span>
-        <span class="fa fa-arrow-right promo-next" aria-hidden="true"></span>
-    </div>
+      <span class="fa fa-arrow-left promo-prev" aria-hidden="true"></span>
+      <span class="fa fa-arrow-right promo-next" aria-hidden="true"></span>
     <div class="owl-carousel promo-carousel">
         <?php while ( $slider_loop->have_posts() ) : $slider_loop->the_post();?>
         <div class="item" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">

@@ -1,24 +1,25 @@
 @import "variables";
 @import "mixins";
 .promo-carousel-box {
-    position: relative;
-}
-.promo-controls {
-  position:absolute;
-  z-index: 9999;
-  bottom:0;
-  right:0;
-  font-size: 1.5rem;
-  user-select: none;
-  span {
-    margin: 0.5rem;
-    color: #fff;
-    border: 2px solid $pastel-peach;
-    padding: 0.7rem;
-    cursor: pointer;
-  }
+      position: relative;
+      .fa {
+        position:absolute;
+        font-size: 1.5rem;
+        user-select: none;
+        z-index: 9999;
+        bottom:50%;
+        color: #fff;
+        cursor: pointer;
+      }
+      .fa:first-of-type {
+        left: .5rem;
+      }
+      .fa:last-of-type {
+        right: .5rem;
+      }
 }
 .promo-carousel {
+  position: relative;
   .item {
       @include background-image;
       min-height: 50vh;
@@ -34,6 +35,27 @@
         font-weight: 300;
         font-size: 1.5rem;
       }
-      }
+    }
+  }
+  .owl-dots {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    right: 50%;
+    .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 0 .3rem;
+      background-color: #fff;
+      display: block;
+      transition: opacity .2s ease;
+      border-radius: 30px;
+    }
+  }
+  .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $ochre;
   }
 }
