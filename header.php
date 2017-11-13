@@ -27,7 +27,7 @@
         <form role="search" method="get" id="searchform" class="searchform col-12 col-md-5 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">
             <button class="theme-layout input-group-addon" id="basic-addon1" data-toggle="tooltip" data-placement="bottom" title="Wyszukaj w sklepie"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-            <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
+            <input type="text" class="form-control col-lg-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
         </div>
         </form>
     </header>
@@ -80,12 +80,17 @@
               <a class="nav-link" href="<?php echo get_template_directory_uri() . '/promocje'; ?>">Promocje</a>
           </li>
         </ul>
-        <form role="search" method="get" id="searchform" class="searchform col-12 col-md-5 row align-items-center" action="http://localhost/sklep/">
-        <div class="input-group">
-            <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-            <input type="text" class="form-control col-12 col-md-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1">
+        <div class="modal-header">
+          <h5 class="modal-title">Wyszukaj w sklepie:</h5>
         </div>
-        </form>
-        <hr class="my-4">
+        <div class="modal-body d-flex justify-content-center">
+          <form role="search" method="get" id="searchform" class="searchform col-10" action="http://localhost/sklep/">
+          <div class="input-group col-12">
+              <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+              <input type="text" class="form-control" name="s" id="s" aria-label="Szukaj w sklepie" aria-describedby="basic-addon1" placeholder="Wyszukaj w sklepie">
+          </div>
+          </form>
+        </div>
+        <hr class="my-3">
       </div>
     </nav>
