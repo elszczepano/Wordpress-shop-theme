@@ -6,13 +6,10 @@
         <h4>Kategorie:</h4>
         <ul>
           <?php
-          $orderby = 'name';
-          $order = 'asc';
-          $hide_empty = false ;
           $cat_args = array(
-          'orderby'    => $orderby,
-          'order'      => $order,
-          'hide_empty' => $hide_empty,
+          'orderby'    => 'name',
+          'order'      => 'asc',
+          'hide_empty' => false,
           );
           $product_categories = get_terms( 'product_cat' , $cat_args );
           foreach ($product_categories as $category): ?>

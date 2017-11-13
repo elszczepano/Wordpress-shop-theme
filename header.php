@@ -39,13 +39,10 @@
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Kategorie</a>
         <div class="dropdown-menu">
           <?php
-          $orderby = 'name';
-          $order = 'asc';
-          $hide_empty = false ;
           $cat_args = array(
-          'orderby'    => $orderby,
-          'order'      => $order,
-          'hide_empty' => $hide_empty,
+          'orderby'    => 'name',
+          'order'      => 'asc',
+          'hide_empty' => false,
           );
           $product_categories = get_terms( 'product_cat' , $cat_args );
           foreach ($product_categories as $category): ?>
