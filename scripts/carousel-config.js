@@ -10,9 +10,9 @@ $('.promo-carousel').owlCarousel( {
     autoplay: true,
     rewind: true
 })
+
 //promo carousel controls
-let promoControls = $('.promo-carousel');
-promoControls.owlCarousel();
+const promoControls = $('.promo-carousel');
 
 $('.promo-next').click(function() {
     promoControls.trigger('next.owl.carousel');
@@ -20,17 +20,39 @@ $('.promo-next').click(function() {
 $('.promo-prev').click(function() {
     promoControls.trigger('prev.owl.carousel');
 })
+
 //recommended products carousel init
 $('.recommended-products-carousel').owlCarousel( {
     loop: true,
     autoplayTimeout: 7000,
     smartSpeed: 700,
     nav: false,
-    items: 3,
-    dots: false,
     autoplay: true,
-    rewind: true
+    rewind: true,
+    responsive : {
+    0 : {
+      items: 1,
+    },
+    768 : {
+      items: 2,
+    },
+    992 : {
+      items: 3,
+      dots: false
+    }
+}
 })
+
+//promo carousel controls
+const recommendedControls = $('.recommended-products-carousel');
+
+$('.recommended-next').click(function() {
+    recommendedControls.trigger('next.owl.carousel');
+})
+$('.recommended-prev').click(function() {
+    recommendedControls.trigger('prev.owl.carousel');
+})
+
 // single product gallery carousel init
 $('.product-gallery-carousel').owlCarousel( {
     loop: true,
