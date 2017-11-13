@@ -45,3 +45,10 @@
   font-family: 'Orbitron', sans-serif;
   font-weight: bold;
 }
+@mixin dots {
+  width: 10px;
+  height: 10px;
+  display: block;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}

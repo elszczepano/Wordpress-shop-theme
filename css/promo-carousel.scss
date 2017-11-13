@@ -38,7 +38,6 @@
     }
   }
   .owl-dots {
-    height: 20px;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -46,13 +45,9 @@
     left: 50%;
     right: 50%;
     .owl-dot span {
-      width: 10px;
-      height: 10px;
+      @include dots;
       margin: 0 .3rem;
       background-color: #fff;
-      display: block;
-      transition: opacity .2s ease;
-      border-radius: 30px;
     }
   }
   .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
