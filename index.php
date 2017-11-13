@@ -17,8 +17,8 @@
 </div>
 <div class="recommended-products-box">
   <div class="recommended-controls">
-    <span class="fa fa-arrow-left recommended-prev d-none d-lg-inline" aria-hidden="true"></span>
-    <span class="fa fa-arrow-right recommended-next d-none d-lg-inline" aria-hidden="true"></span>
+    <span class="fa fa-arrow-left recommended-prev d-none d-xl-inline" aria-hidden="true"></span>
+    <span class="fa fa-arrow-right recommended-next d-none d-xl-inline" aria-hidden="true"></span>
   </div>
   <h2 class="recommended-products-header">Polecane produkty</h2>
   <div class="owl-carousel recommended-products-carousel">

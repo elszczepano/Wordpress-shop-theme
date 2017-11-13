@@ -36,7 +36,7 @@ $('.recommended-products-carousel').owlCarousel( {
     768 : {
       items: 2,
     },
-    992 : {
+    1200 : {
       items: 3,
       dots: false
     }
