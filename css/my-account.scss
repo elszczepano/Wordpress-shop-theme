@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixins";
-.login-container .woocommerce .woocommerce-ResetPassword {
+.my-account-container .woocommerce .woocommerce-ResetPassword {
     margin: 1rem;
     p .input-text {
       padding: .5rem .75rem;
@@ -21,7 +21,7 @@
         color: $ochre;
     }
 }
-.login-container .woocommerce .u-columns div {
+.my-account-container .woocommerce .u-columns div {
     form {
     border: none;
     padding: 0;
@@ -49,6 +49,7 @@
 .woocommerce-MyAccount-navigation ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 2rem 0;
   padding: 0;
@@ -81,6 +82,36 @@
       border: 1px solid #eee;
       padding: 2rem;
       border-radius: 1rem;
+    }
+  }
+  .woocommerce-message--info {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .woocommerce-MyAccount-navigation ul {
+    display: block;
+    li {
+      padding: 1rem;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    li:not(:first-child) {
+      border-top: none;
+    }
+  }
+  .woocommerce-MyAccount-content {
+    .u-column1 {
+      max-width: 100%;
+      header {
+        margin: 1rem 0;
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+      address {
+        padding: .6rem;
+      }
     }
   }
 }
