@@ -81,8 +81,8 @@
           <h5 class="modal-title">Wyszukaj w sklepie:</h5>
         </div>
         <div class="modal-body d-flex justify-content-center">
-          <form role="search" method="get" id="searchform" class="searchform col-10" action="http://localhost/sklep/">
-          <div class="input-group col-12">
+          <form role="search" method="get" id="searchform" class="searchform" action="http://localhost/sklep/">
+          <div class="input-group">
               <button class="theme-layout input-group-addon" id="display-search-mobile"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
               <input type="text" class="form-control" name="s" id="s" aria-label="Szukaj w sklepie" aria-describedby="display-search-mobile" placeholder="Wyszukaj">
           </div>
