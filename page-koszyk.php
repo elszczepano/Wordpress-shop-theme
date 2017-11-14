@@ -4,11 +4,11 @@
   <?php do_action( 'woocommerce_before_cart_table' ); ?>
   <table class="cart-table container">
     <thead>
-      <tr class="row">
-  				<th class="col-2 product-thumbnail">&nbsp;</th>
-  				<th class="col-6 product-name"><?php _e( 'Product' , 'woocommerce' ); ?></th>
-  				<th class="col-2 product-price"><?php _e( 'Price' , 'woocommerce' ); ?></th>
-  				<th class="col-1 product-quantity"><?php _e( 'Quantity' , 'woocommerce' ); ?></th>
+      <tr class="d-flex">
+  				<th class="col-2 product-thumbnail d-none d-lg-flex">&nbsp;</th>
+  				<th class="col-5 col-lg-6 product-name"><?php _e( 'Product' , 'woocommerce' ); ?></th>
+  				<th class="col-4 col-lg-2 product-price"><?php _e( 'Price' , 'woocommerce' ); ?></th>
+  				<th class="col-2 col-lg-1 product-quantity"><?php _e( 'Quantity' , 'woocommerce' ); ?></th>
           <th class="col-1 product-remove">&nbsp;</th>
       </tr>
     </thead>
@@ -21,8 +21,8 @@
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible' , true , $cart_item , $cart_item_key ) ):
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink' , $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '' , $cart_item , $cart_item_key );
 			?>
-      <tr class="row product-row woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class' , 'cart_item' , $cart_item , $cart_item_key ) ); ?>">
-        <td class="col-2 product-thumbnail">
+      <tr class="d-flex product-row woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class' , 'cart_item' , $cart_item , $cart_item_key ) ); ?>">
+        <td class="col-2 product-thumbnail d-none d-lg-flex">
           <?php
 						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail' , $_product->get_image() , $cart_item , $cart_item_key );
 						if ( ! $product_permalink ) {
@@ -32,7 +32,7 @@
 						}
 					?>
         </td>
-        <td class="col-6 product-name" data-title="<?php esc_attr_e( 'Product' , 'woocommerce' ); ?>">
+        <td class="col-5 col-lg-6 product-name" data-title="<?php esc_attr_e( 'Product' , 'woocommerce' ); ?>">
           <?php
 						if ( ! $product_permalink ) {
 							echo apply_filters( 'woocommerce_cart_item_name' , $_product->get_name() , $cart_item , $cart_item_key ) . '&nbsp;';
@@ -45,12 +45,12 @@
 						}
 					?>
         </td>
-        <td class="col-2 product-price" data-title="<?php esc_attr_e( 'Price' , 'woocommerce' ); ?>">
+        <td class="col-4 col-lg-2 product-price" data-title="<?php esc_attr_e( 'Price' , 'woocommerce' ); ?>">
 					<?php
 						echo apply_filters( 'woocommerce_cart_item_price' , WC()->cart->get_product_price( $_product ) , $cart_item , $cart_item_key );
 					?>
 				</td>
-        <td class="col-1 product-quantity" data-title="<?php esc_attr_e( 'Quantity' , 'woocommerce' ); ?>">
+        <td class="col-2 col-lg-1 product-quantity" data-title="<?php esc_attr_e( 'Quantity' , 'woocommerce' ); ?>">
           <?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" >' , $cart_item_key );
@@ -81,9 +81,9 @@
       <?php endif; endforeach; ?>
       <?php do_action( 'woocommerce_cart_contents' ); ?>
       <tr>
-				<td class="actions d-flex justify-content-between">
+				<td class="actions d-flex justify-content-between flex-wrap">
 					<?php if ( wc_coupons_enabled() ): ?>
-            <div class="col-5 input-group coupon">
+            <div class="col-12 col-lg-5 input-group coupon">
               <input type="text" name="coupon_code" id="coupon_code" class="input-text form-control" placeholder="<?php esc_attr_e( 'Coupon code' , 'woocommerce' ); ?>" aria-label="Search for...">
               <span class="input-group-btn">
                 <input type="submit" class="btn theme-layout button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon' , 'woocommerce' ); ?>">
@@ -91,7 +91,7 @@
               <?php do_action( 'woocommerce_cart_coupon' ); ?>
             </div>
 					<?php endif; ?>
-          <div class="col-2">
+          <div class="col-12 col-md-3 col-lg-2">
             <input type="submit" class="btn theme-layout button" name="update_cart" value="<?php esc_attr_e( 'Update cart' , 'woocommerce' ); ?>">
   					<?php do_action( 'woocommerce_cart_actions' ); ?>
           </div>

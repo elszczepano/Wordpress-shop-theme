@@ -18,11 +18,15 @@
       margin: 1rem 0;
       .actions {
         padding: 2rem 0;
+        div {
+          margin-bottom: 1rem;
+        }
       }
   }
   tbody .product-row {
     td {
-      padding: 0;
+      padding: .1rem;
+      box-sizing: border-box;
       display:flex;
       align-self: center;
       font-weight: bold;
@@ -41,7 +45,7 @@
       height: auto;
     }
     .product-quantity input {
-      width: 5rem;
+      width: 2.55rem;
       border-radius: 5px;
       outline: none;
       padding: 0.3rem;
@@ -64,6 +68,7 @@
     text-align: right;
     margin: 0;
     padding: 1rem 0;
+    font-size: 1.6rem;
   }
   h2::after {
     content: ':';
