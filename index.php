@@ -7,7 +7,7 @@
         <div class="item" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
           <div class="promo-item-content">
             <h2><?php the_title(); ?></h2>
-            <h3><?php the_content(); ?></h3>
+            <div><?php the_content(); ?></div>
           </div>
         </div>
         <?php endwhile; ?>

@@ -95,7 +95,7 @@
       text-transform: uppercase;
       font-size: 1.4rem;
     }
-  }
+}
   .woocommerce-Tabs-panel--description, .woocommerce-Tabs-panel--additional_information {
     p {
       font-size: 1.1rem;
@@ -138,5 +138,8 @@
 @media (max-width: 992px) {
   .product-container .product-gallery-carousel {
       max-width: 100%;
-    }
+  }
+  .product-description .wc-tabs-wrapper ul li a {
+      font-size: 1.2rem;
+  }
 }

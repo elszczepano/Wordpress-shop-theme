@@ -26,8 +26,8 @@
       </div>
         <form role="search" method="get" id="searchform" class="searchform col-12 col-md-5 row align-items-center" action="http://localhost/sklep/">
         <div class="input-group">
-            <button class="theme-layout input-group-addon" id="basic-addon1" data-toggle="tooltip" data-placement="bottom" title="Wyszukaj w sklepie"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-            <input type="text" class="form-control col-lg-9" name="s" id="s" aria-label="search" aria-describedby="basic-addon1" placeholder="Wyszukaj w sklepie">
+            <button class="theme-layout input-group-addon" id="display-search-pc" data-toggle="tooltip" data-placement="bottom" title="Wyszukaj w sklepie"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+            <input type="text" class="form-control col-lg-9" name="s" id="s" aria-label="search" aria-describedby="display-search-pc" placeholder="Wyszukaj w sklepie">
         </div>
         </form>
     </header>
@@ -83,8 +83,8 @@
         <div class="modal-body d-flex justify-content-center">
           <form role="search" method="get" id="searchform" class="searchform col-10" action="http://localhost/sklep/">
           <div class="input-group col-12">
-              <button class="theme-layout input-group-addon" id="basic-addon1"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
-              <input type="text" class="form-control" name="s" id="s" aria-label="Szukaj w sklepie" aria-describedby="basic-addon1" placeholder="Wyszukaj">
+              <button class="theme-layout input-group-addon" id="display-search-mobile"><span class="fa fa-search" aria-hidden="true"></span>&nbsp;Szukaj</button>
+              <input type="text" class="form-control" name="s" id="s" aria-label="Szukaj w sklepie" aria-describedby="display-search-mobile" placeholder="Wyszukaj">
           </div>
           </form>
         </div>
